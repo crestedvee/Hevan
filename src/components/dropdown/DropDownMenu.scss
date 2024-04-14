@@ -1,0 +1,38 @@
+@import '../../responsive.scss';
+
+ul {
+  list-style: none;
+  padding: unset;
+  margin: unset;
+  background-color: black;
+  opacity: 0.8;
+  color: #ffffff;
+  border-radius: 10%;
+
+  @include sm {
+    border-radius: 0;
+    opacity: 0.9;
+  }
+}
+
+li {
+ width: 100px;
+ margin: auto;
+ color: #ffffff;
+ margin-bottom: 2px;
+ text-align: center;
+ margin-bottom: 2px;
+// font-size: 10px;
+
+ @include sm { 
+  font-style: italic;
+  //font-size: 1rem;
+ }
+}
+
+li:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+  scale: 1;
+}
+

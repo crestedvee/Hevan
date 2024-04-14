@@ -1,0 +1,143 @@
+@import '../../../responsive.scss';
+
+.beansCat {
+  background-color: whitesmoke;
+  background-blend-mode: darken;
+
+  @include sm {
+    // background-color: orange !important;
+    text-align: center;
+   // background-color: whitesmoke !important;
+  }
+
+  h4 {
+    text-align: left;
+    font-size: 18px;
+
+
+    @include sm {
+      text-align: center;
+    }
+  }
+
+
+  p {
+
+    @include sm {
+      text-align: left;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+
+  .beanCatDet {
+    width: 100%;
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+
+    img {
+      width: 20%;
+
+
+      @include sm {
+        width: 40%;
+        align-self: flex-start;
+        border: none;
+      }
+    }
+
+    @include sm {
+      width: 95%;
+      justify-content: center;
+    }
+  }
+
+  details {
+    padding-left: auto;
+    padding-right: auto;
+
+    summary {
+      padding-left: auto;
+      padding-right: auto;
+      color: rgb(138, 103, 103);
+    }
+
+    .dishes {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 15px;
+      background-color: whitesmoke;
+      margin-top: 40px;
+
+
+      div {
+        width: 18rem;
+        height: auto;
+        margin-bottom: 2rem;
+        align-items: center;
+
+
+        @include sm {
+          width: 23rem;
+          margin-bottom: 4rem;
+          // border: 1px groove;
+        }
+
+        .imgDiv {
+          height: 55%;
+
+          @include sm {
+            border: 1px groove;
+          }
+        }
+
+        img {
+          width: 100%;
+
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 20px;
+
+          @include sm {
+            font-size: 15px;
+            line-height: 20px;
+          }
+
+        }
+
+        .buttonDiv {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          align-content: center;
+          height: auto;
+
+          // background-color: gray;
+
+
+          button {
+
+            background-color: #0c4957;
+            color: #ffffff;
+            border-radius: 10%;
+            text-align: center;
+            height: 30px;
+            border-style: none;
+            font-weight: bold;
+
+            &:hover {
+              background-color: #55c2da;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

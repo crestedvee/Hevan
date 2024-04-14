@@ -1,0 +1,33 @@
+@import '../../../responsive.scss';
+
+.others {
+  margin-top: 70px;
+
+  h2 {
+    color: rgb(138, 103, 103);
+    margin-bottom: 10px;
+    text-align: center;
+  } 
+
+
+  h3 {
+    color: rgb(138, 103, 103);
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+  }
+
+  div {
+    background-color: whitesmoke !important;
+    margin-bottom: 40px;
+
+    @include sm {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+  //    background-color: grey;
+    }
+  }
+
+}

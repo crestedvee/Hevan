@@ -1,0 +1,26 @@
+@import '../../responsive.scss';
+
+  .headerImg {
+    
+     img {
+       width: 100%;
+     //  opacity: 0.2;
+     @include sm {
+      margin-top: 20px;
+     }
+     }
+   }
+
+   h2 {
+    margin-top: 20px;
+    color: rgb(138, 103, 103);
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 50px;
+  
+  
+  @include sm {
+      font-size: 22px;
+  }
+  } 
+

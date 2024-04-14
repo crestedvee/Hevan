@@ -1,0 +1,139 @@
+@import '../../responsive.scss';
+
+.login {
+  form {
+    width: 100%;
+
+    div {
+      width: 40%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      border: 1px groove;
+
+      @include sm {
+        width: 90%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      @include md {
+        width: 70%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .imgDiv {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        border: none;
+        margin-bottom: 50px;
+        color: rgb(138, 103, 103);
+
+        img {
+          width: 120px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 20px;
+        }
+  
+      }
+
+      input {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 2rem;
+        border: none;
+        border-bottom: 2px groove;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        display: block;
+      }
+
+      .passDiv {
+        // background-color: grey;
+         width: 80%;
+         margin-top: 0;
+         margin-bottom: 1rem;
+         padding: 0;
+         padding-top: 1rem;
+         display: flex;
+         gap: 0;
+         align-content: baseline;
+         align-items: center;
+         justify-content: center;
+         border: none;
+ 
+         input {
+          flex: 10;
+          margin-top: 0;
+         }
+ 
+         #eye {
+           flex: 1;
+           height: 1.5rem;
+       //    position: absolute;
+        //   top: 0;
+        //   right: -172px;
+         //  height: 1.5rem;
+         }
+       }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 30px;
+        text-align: right;
+        //margin-left: 40px;
+
+        li {
+
+
+          .forgot {
+            margin-right: 60px;
+            margin-bottom: 10px;
+            display: inline-block;
+            color: rgb(138, 103, 103);
+            text-decoration: none;
+            
+            &:hover {
+              color: red;
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+        }
+
+      }
+
+
+      .button{
+        border-radius: 10px;
+        width: 80%;
+        background-color: #55c2da;
+        color: #ffffff;
+        margin-top: 40px;
+        height: 3rem;
+
+        &:hover {
+          background-color: #0c4957; 
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
