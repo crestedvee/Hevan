@@ -43,7 +43,7 @@ function LoginPage() {
             </span>
           </div>
           <input type='submit' className='button' value="sign in" onClick={handleSubmit}/>
-          <ul>
+          <ul className='loginUl'>
             <li>
               forgot &nbsp;<a href='/' className='forgot'>username or password ?</a>
             </li>

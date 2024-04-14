@@ -14,24 +14,34 @@
       margin-bottom: 100px;
       border: 1px groove;
 
-      @include sm {
-        width: 90%;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
+
+      @include xxlg {
+        width: 40%;
       }
 
+      @include xlg {
+        width: 40%;
+
+      }
+
+      @include lg {
+        width: 40%;
+      }
+
+
       @include md {
+        width: 50%;
+
+      }
+
+      @include smd {
+        width: 50%;
+      }
+
+
+      @include sm {
         width: 70%;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
+
       }
 
       .imgDiv {
@@ -93,18 +103,23 @@
          }
        }
 
-      ul {
+      .loginUl {
         list-style-type: none;
         padding: 0;
         margin-top: 30px;
-        text-align: right;
+       // text-align: center;
         //margin-left: 40px;
+       //  width: 100%;
+         background-color: white;
+       //  color: black;
 
         li {
-
+          width: 100%;
+          text-align: center;
+          color: rgb(138, 103, 103);
 
           .forgot {
-            margin-right: 60px;
+          //  margin-right: 60px;
             margin-bottom: 10px;
             display: inline-block;
             color: rgb(138, 103, 103);
@@ -113,7 +128,7 @@
             &:hover {
               color: red;
               cursor: pointer;
-              text-decoration: underline;
+            //  text-decoration: underline;
             }
           }
         }
