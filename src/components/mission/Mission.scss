@@ -11,8 +11,9 @@
 
   h3 {
     color: rgb(138, 103, 103);
-    text-align: left;
-    text-decoration: underline;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 50px;
   }
 
   .cate {
@@ -28,6 +29,27 @@
     font-size: 20px;
     text-align: left;
     line-height: 30px;
+    
+    .about-ul {
+      list-style: none;
+      padding: unset;
+      margin: unset;
+      background-color: #ffffff;
+      opacity: 0.8;
+      border-radius: 0;
+      list-style: circle;
+    //  margin-left: 10px;
+      
+      li{
+        font-size: 18px;
+        text-align: left;
+        line-height: 28px;
+        color: #000000;
+        width: 90%;
+        margin-top: 10px;
+
+      }
+    }
 
     @include sm {
       font-size: 18px;

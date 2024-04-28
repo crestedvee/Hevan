@@ -20,7 +20,7 @@ function Mission() {
       <p>
         At <span>Hevan</span>, our mission is to celebrate and promote the beauty
         of Nigerian culinary traditions. We strive to:
-        <ul>
+        <ul className='about-ul'>
           <li>
             Showcase the richness and diversity of Nigerian dishes, from iconic favorites
             to lesser-known regional specialties.
@@ -43,7 +43,7 @@ function Mission() {
         What We Offer
       </h3>
       <p>
-        <ul>
+        <ul className='about-ul'>
           <li>
             Authentic Recipes: Explore our curated collection of traditional Nigerian recipes, complete with
             step-by-step instructions and tips for achieving authentic flavors.
